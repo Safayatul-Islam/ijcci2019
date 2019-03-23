@@ -1,0 +1,222 @@
+body {
+	margin: 0;
+  font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #263238;
+	overflow: hidden;
+}
+
+
+
+#navbar {
+  overflow: hidden;
+	background-color: #455a64;
+	padding-left: 50px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	font-size: 17px;
+	transition: .5s;
+
+}
+
+#navbar a:hover {
+  background-color: #263238;
+	color: powderblue;
+	transition: .7s;
+}
+
+#navbar a.active {
+  background-color: #263238;
+  color: white;
+}
+
+.content {
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.header{
+	background-color: #1fc8db;
+	background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);  padding: 10px;
+
+	display: flex;
+	justify-content: space-around;
+}
+.logo{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 3%;
+}
+
+.logoitem img{
+	height: 90px;
+	flex: 1;
+	padding-top: 29px;
+	padding-left: 20px;
+}
+
+.title{
+	padding-left: 5%;
+	flex: 3;
+	text-align: left;
+}
+
+.springer img{
+	height: 80px;
+	padding-top: 37px;
+	padding-right: 5%;
+	flex: 1;
+}
+
+.footer{
+	margin-bottom: 0;
+	padding-top: 10px;
+	text-align: center;
+  width: 100%;
+  background: #455a64;
+  color: #fff;
+	height: 30px;
+	font-size: 15px;
+}
+
+.h-flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+.h-flex-left{
+	flex: 2;
+}
+
+.h-flex-right{
+	flex: 1;
+	padding-left: 4%;
+}
+
+.small-container{
+	background-color: #cfd8dc;
+	padding: 10px;
+	padding-left: 25px;
+	border-radius: 6px;
+}
+
+.small-container:last-child{
+	color:#263238;
+	text-decoration: none;
+	text-align: center;
+}
+
+.small-container:last-child:hover{
+	background-color: #263238;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+.toi{
+	background-color: #cfd8dc;
+	padding: 10px;
+	padding-left: 25px;
+	border-radius: 6px;
+}
+.toi-f{
+	display: flex;
+}
+
+.toi-1,.toi-2,.toi-3{
+	flex: 1;
+}
+
+
+
+@media (max-width: 700px) {
+	body{
+	font-size: 11px;
+	overflow: auto;
+	}
+	.header{
+		flex-direction: column; 
+	}
+
+
+.logoitem img{
+	height: 60px;
+	flex: 1;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.title{
+	padding-left: 0%;
+	flex: 3;
+	text-align: center;
+}
+.title h3{
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.title h1{
+	font-size: 36px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.springer img{
+	height: 50px;
+	padding-top: 0px;
+	flex: 1;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#navbar a{
+	font-size: 12px;
+	padding: 5px;
+}
+#navbar{
+	padding-left: 0px;
+}
+.h-flex{
+	flex-direction: column; 
+}
+.h-flex-right{
+	padding-left: 0px;
+}
+.toi-f{
+	flex-direction: column; 
+}
+.small-container{
+	margin-left: 0px;
+	padding-left: 5px;
+}
+
+.footer{
+	font-size: 9px;
+}
+
+}
+
